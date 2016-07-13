@@ -1,0 +1,6 @@
+accessTokenUrl=http://oauthgate.com:8080/client/accessToken
+client.connector.rest.url=http://oauthgate.com:8080/server/oauth/rest/
+client.welcomePage=/index
+
+clientId=f3166ba9b3fcf65bd5f01a2ee986f5b8e60dca2873405ca06fc97f9cecbfe1b7
+clientSecret=136c46a9ec95a3d404766b0095affd7daacdb249564d3b657cc777b3822c90bf

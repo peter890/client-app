@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- parent coordinates -->
+	<parent>
+		<groupId>org.client</groupId>
+		<artifactId>client-app</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<!-- project coordinates -->
+	<groupId>org.client</groupId>
+	<artifactId>client-app-sso</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<!-- project dependencies -->
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+            <groupId>org.apache.oltu.oauth2</groupId>
+            <artifactId>org.apache.oltu.oauth2.client</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.client</groupId>
+            <artifactId>client-app-connector</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+	</dependencies>
+</project>
