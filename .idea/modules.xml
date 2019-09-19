@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/client-app.iml" filepath="$PROJECT_DIR$/client-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/client-app-common.iml" filepath="$PROJECT_DIR$/common/client-app-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/connector/client-app-connector.iml" filepath="$PROJECT_DIR$/connector/client-app-connector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso/client-app-sso.iml" filepath="$PROJECT_DIR$/sso/client-app-sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth-sso-client/oauth-sso-client.iml" filepath="$PROJECT_DIR$/oauth-sso-client/oauth-sso-client.iml" />
+    </modules>
+  </component>
+</project>

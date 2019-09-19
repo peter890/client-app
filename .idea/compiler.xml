@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="client-app-common" />
+        <module name="client-app-connector" />
+        <module name="client-app-sso" />
+        <module name="oauth-sso-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client-app" target="1.8" />
+      <module name="client-app-common" target="1.8" />
+      <module name="client-app-connector" target="1.8" />
+      <module name="client-app-sso" target="1.8" />
+      <module name="oauth-sso-client" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

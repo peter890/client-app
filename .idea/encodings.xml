@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="windows-1250">
+    <file url="file://$PROJECT_DIR$/common/src/main/java/org/client/common/ConfigProperties.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/connector/src/main/java/org/core/connector/ServiceInvocationException.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/connector/src/main/java/org/core/connector/rest/AbstractServiceInvoker.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/connector/src/main/java/org/core/connector/rest/api/IServiceInvoker.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/sso/src/main/java/org/core/client/filters/ClientSSOFilter.java" charset="windows-1250" />
+    <file url="PROJECT" charset="windows-1250" />
+  </component>
+</project>
