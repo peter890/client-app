@@ -1,19 +1,13 @@
-/**
- * 
- */
 package org.core.connector.rest.api;
 
 import org.core.connector.ServiceInvocationException;
 
-/**
- * @author piotrek
- *
- */
 public interface IServiceInvoker<I, O> {
-  /**
-   * Wywo³uje us³ugê.
-   * @param input obiekt wejœciowy connectora do us³ugi.
-   * @return Zwraca obiekt connectora zwrócony przez us³ugê.
-   */
-	O invoke(I input) throws ServiceInvocationException;
+    /**
+     * Wywoï¿½uje usï¿½ugï¿½.
+     *
+     * @param input obiekt wejï¿½ciowy connectora do usï¿½ugi.
+     * @return Zwraca obiekt connectora zwrï¿½cony przez usï¿½ugï¿½.
+     */
+    O invoke(I input) throws ServiceInvocationException;
 }

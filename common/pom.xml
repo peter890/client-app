@@ -1,24 +1,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<!-- parent coordinates -->
-	<parent>
-		<groupId>org.client</groupId>
-		<artifactId>client-app</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	<!-- project coordinates -->
-	<groupId>org.client</groupId>
-	<artifactId>client-app-common</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+    <!-- parent coordinates -->
+    <parent>
+        <groupId>org.client</groupId>
+        <artifactId>client-app</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    
+    <!-- project coordinates -->
+    <groupId>org.client</groupId>
+    <artifactId>client-app-common</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
-	<!-- project dependencies -->
-	<dependencies>
+    <!-- project dependencies -->
+    <dependencies>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.5</version>
         </dependency>
-	</dependencies>
+    </dependencies>
 </project>

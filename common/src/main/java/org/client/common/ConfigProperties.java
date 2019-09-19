@@ -1,71 +1,65 @@
 /**
- * 
+ *
  */
 package org.client.common;
 
-import java.util.Properties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author piotrek
- *
- */
+import java.util.Properties;
+
 public enum ConfigProperties {
-  ClientId("clientId"), 
-  ClientSecret("clientSecret"),
-  ClientWelcomePage("client.welcomePage"),
-  AccessTokenUrl("accessTokenUrl"),
-  RestUrl("client.connector.rest.url");
-  /**
-   * Logger.
-   */
-  private static final Logger logger = LoggerFactory.getLogger(ConfigProperties.class);
+    CLIENT_ID("clientId"),
+    CLIENT_SECRET("clientSecret"),
+    CLIENT_WELCOME_PAGE("client.welcomePage"),
+    CLIENT_CALLBACK_URL("client.callback.url"),
+    ACCESS_TOKEN_URL("accessTokenUrl"),
+    REST_URL("client.connector.rest.url");
 
-  /**
-   * Œcie¿ka do pliku z konfiguracj¹.
-   */
-  private static final String PATH = "/localConfig.properties";
-  /**
-   * Klucz property.
-   */
-  private String key;
+    /**
+     * Logger.
+     */
+    private static final Logger logger = LoggerFactory.getLogger(ConfigProperties.class);
 
-  /**
-   * Wartoœæ property.
-   */
-  private String value;
-  /**
-   * Obiekt Properties za³adowany z pliku.
-   */
-  private static Properties properties;
+    /**
+     * Sciezka do pliku z konfiguracja.
+     */
+    private static final String PATH = "/localConfig.properties";
+    /**
+     * Klucz property.
+     */
+    private final String key;
 
-  /**
-   * 
-   * @param key
-   *          Klucz property.
-   */
-  private ConfigProperties(final String key) {
-    this.key = key;
-  }
+    /**
+     * Wartosc property.
+     */
+    private String value;
+    /**
+     * Obiekt Properties zaladowany z pliku.
+     */
+    private static Properties properties;
 
-  public String getValue() {
-    if (value == null) {
-      init();
+    ConfigProperties(final String key) {
+        this.key = key;
     }
-    return value;
-  }
 
-  private void init() {
-    if (properties == null) {
-      properties = new Properties();
-      try {
-        properties.load(Thread.currentThread().getContextClassLoader().getResourceAsStream(PATH)/*ConfigProperties.class.getResourceAsStream(PATH)*/);
-      } catch (Exception e) {
-        logger.error("Unable to load " + PATH + " file from classpath.", e);
-        System.exit(1);
-      }
+    public String getValue() {
+        if (this.value == null) {
+            init();
+        }
+        return this.value;
     }
-    value = (String) properties.get(this.key);
-  }
+
+    private void init() {
+        if (properties == null) {
+            properties = new Properties();
+            try {
+                properties.load(Thread.currentThread().getContextClassLoader().getResourceAsStream(PATH));
+            } catch (final Exception e) {
+                logger.error("Unable to load " + PATH + " file from classpath.", e);
+                System.exit(1);
+            }
+        }
+        this.value = (String) properties.get(this.key);
+    }
 }
